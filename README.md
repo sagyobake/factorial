@@ -1,1 +1,2 @@
 # factorial
+* Stirling's approximation  
