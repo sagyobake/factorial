@@ -24,12 +24,15 @@ const passToDom = (n, a, b) => {
     const div = document.createElement("div");
     const a_p = document.createElement("p");
     const b_p = document.createElement("p");
+    const d_p = document.createElement("p");
     const d = Math.abs(b - a) / a;
     div.setAttribute("id", "result_div");
     a_p.innerText = `${n}! = ${a}`;
-    b_p.innerText = `${n}! = ${b}　誤差${d}`;
+    b_p.innerText = `${n}! = ${b}`;
+    d_p.innerText = `誤差　${d}`;
     div.appendChild(a_p);
     div.appendChild(b_p);
+    div.appendChild(d_p);
     factorials_list.appendChild(div);
 };
 
