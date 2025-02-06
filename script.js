@@ -25,11 +25,11 @@ const passToDom = (n, a, b) => {
     const a_p = document.createElement("p");
     const b_p = document.createElement("p");
     const d_p = document.createElement("p");
-    const d = Math.abs(b - a) / a;
+    const d = Math.abs(b - a) / a * 100;
     div.setAttribute("id", "result_div");
     a_p.innerText = `${n}! = ${a}`;
     b_p.innerText = `${n}! = ${b}`;
-    d_p.innerText = `誤差　${d}`;
+    d_p.innerText = `誤差　${d.toFixed(5)}%`;
     div.appendChild(a_p);
     div.appendChild(b_p);
     div.appendChild(d_p);
